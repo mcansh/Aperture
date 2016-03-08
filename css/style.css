@@ -1,0 +1,301 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,700);
+@font-face {
+  font-family: "iconfont";
+  src: url(//unsplash.global.ssl.fastly.net/assets/iconfont-6c936409cb0cfbdab410e1c2ab68b33b145a3b3cb603902982d2a6e36ab4e36b.eot);
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "iconfont";
+  src: url(//unsplash.global.ssl.fastly.net/assets/iconfont-6c936409cb0cfbdab410e1c2ab68b33b145a3b3cb603902982d2a6e36ab4e36b.eot);
+  src: url(//unsplash.global.ssl.fastly.net/assets/iconfont-6c936409cb0cfbdab410e1c2ab68b33b145a3b3cb603902982d2a6e36ab4e36b.eot?#iefix) format("embedded-opentype"), url(//unsplash.global.ssl.fastly.net/assets/iconfont-8feca2931eed9b6d2f7b3ae71926eeedbf19cd5b1d13777f6d94a113ebe1edf8.woff) format("woff"), url(//unsplash.global.ssl.fastly.net/assets/iconfont-7384e0d93c6967450843a99eabd8ba9b209d11fa43f813e7fb99bbe9c94af448.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+.icon {
+  font-family: "iconfont"; }
+
+.icon-add:before {
+  content: "\f101"; }
+
+.icon-added:before {
+  content: "\f102"; }
+
+.icon-arrow-down:before {
+  content: "\f103"; }
+
+.icon-arrow-left:before {
+  content: "\f104"; }
+
+.icon-back-to-top:before {
+  content: "\f105"; }
+
+.icon-calendar:before {
+  content: "\f106"; }
+
+.icon-camera:before {
+  content: "\f107"; }
+
+.icon-check:before {
+  content: "\f108"; }
+
+.icon-collections:before {
+  content: "\f109"; }
+
+.icon-cross:before {
+  content: "\f10a"; }
+
+.icon-download:before {
+  content: "\f10b"; }
+
+.icon-earth:before {
+  content: "\f10c"; }
+
+.icon-email:before {
+  content: "\f10d"; }
+
+.icon-exif:before {
+  content: "\f10e"; }
+
+.icon-eye:before {
+  content: "\f10f"; }
+
+.icon-facebook:before {
+  content: "\f110"; }
+
+.icon-flag:before {
+  content: "\f111"; }
+
+.icon-gps:before {
+  content: "\f112"; }
+
+.icon-grid-multi:before {
+  content: "\f113"; }
+
+.icon-grid-single:before {
+  content: "\f114"; }
+
+.icon-heart:before {
+  content: "\f115"; }
+
+.icon-home:before {
+  content: "\f116"; }
+
+.icon-image:before {
+  content: "\f117"; }
+
+.icon-info:before {
+  content: "\f118"; }
+
+.icon-instagram:before {
+  content: "\f119"; }
+
+.icon-list:before {
+  content: "\f11a"; }
+
+.icon-location:before {
+  content: "\f11b"; }
+
+.icon-lock:before {
+  content: "\f11c"; }
+
+.icon-pinterest:before {
+  content: "\f11d"; }
+
+.icon-plus:before {
+  content: "\f11e"; }
+
+.icon-question:before {
+  content: "\f11f"; }
+
+.icon-remove:before {
+  content: "\f120"; }
+
+.icon-rss:before {
+  content: "\f121"; }
+
+.icon-search:before {
+  content: "\f122"; }
+
+.icon-sort-asc:before {
+  content: "\f123"; }
+
+.icon-sort-desc:before {
+  content: "\f124"; }
+
+.icon-sort:before {
+  content: "\f125"; }
+
+.icon-spinner:before {
+  content: "\f126"; }
+
+.icon-star:before {
+  content: "\f127"; }
+
+.icon-stats:before {
+  content: "\f128"; }
+
+.icon-tags:before {
+  content: "\f129"; }
+
+.icon-time:before {
+  content: "\f12a"; }
+
+.icon-trophy:before {
+  content: "\f12b"; }
+
+.icon-tumblr:before {
+  content: "\f12c"; }
+
+.icon-twitter:before {
+  content: "\f12d"; }
+
+.icon-user:before {
+  content: "\f12e"; }
+
+* {
+  margin: 0; }
+
+a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s; }
+  a:hover {
+    color: #6CC171; }
+
+body {
+  font-family: "Montserrat"; }
+
+nav {
+  height: 6em;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  width: 100vw; }
+  nav a {
+    color: white;
+    margin: 0 10px; }
+  nav .brand {
+    text-transform: uppercase;
+    flex-grow: 1;
+    letter-spacing: 3.4px;
+    margin-left: 6em;
+    font-weight: 700; }
+
+.btn {
+  border: 2px solid white;
+  border-radius: 40px;
+  padding: 10px 20px;
+  -webkit-transition: all 0.15s ease-out 0s;
+  -moz-transition: all 0.15s ease-out 0s;
+  transition: all 0.15s ease-out 0s;
+  margin-right: 6em; }
+  .btn:hover {
+    background: white;
+    color: #6CC171; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 300; }
+
+header {
+  height: 80vh;
+  background-image: url(../img/jellyfish.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+  header h1 {
+    font-size: 4em; }
+  header h2 {
+    margin-top: 15px; }
+  header .signup {
+    margin-top: 20px;
+    padding: 15px 50px;
+    background: #6CC171;
+    border: none;
+    margin-right: 0; }
+
+section.featured {
+  min-height: 100vh;
+  color: #5E5C5C;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 30px; }
+  section.featured h2 {
+    font-size: 2em;
+    font-weight: 300; }
+  section.featured .images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 100vh; }
+    section.featured .images .img {
+      width: 500px;
+      height: 300px;
+      border-radius: 5px;
+      background-image: url(../img/image1.jpg);
+      background-size: cover;
+      background-position: center;
+      color: white; }
+      section.featured .images .img figcaption {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%; }
+      section.featured .images .img .icon-heart {
+        color: #CDCFD2; }
+        section.featured .images .img .icon-heart:before {
+          color: #F05652;
+          margin-right: 5px; }
+
+section#signup {
+  width: 100vw;
+  min-height: 200px;
+  background: #6CC171;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 20px 0;
+  font-size: 1.2em;
+  font-weight: 300; }
+  section#signup form {
+    padding-top: 60px; }
+  section#signup input[type="email"] {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: none;
+    padding: 10px 30px 10px 10px;
+    font-size: 1.3em;
+    outline: none;
+    margin-right: -5px;
+    letter-spacing: 1.5px; }
+  section#signup input[type="submit"] {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: none;
+    font-size: 1.3em;
+    padding: 10px 50px 10px 50px;
+    margin-left: -5px;
+    background: #47824B;
+    color: white;
+    font-weight: 300; }
+
+footer {
+  display: flex;
+  height: 5em;
+  margin: 0 2em;
+  align-items: center;
+  color: #CDCFD2;
+  font-weight: 300; }
+  footer p {
+    margin: 0 20px 0 0; }
+  footer a {
+    margin: 0 15px; }

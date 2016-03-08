@@ -1,0 +1,172 @@
+@import url(//fonts.googleapis.com/css?family=Montserrat:300,700)
+@import "bourbon"
+@import "icon"
+
+$btn:     #6CC171
+$signup:  #47824B
+$footer:  #CDCFD2
+$heart:   #F05652
+
+*
+  margin: 0
+
+a
+  color: inherit
+  text-decoration: none
+  +transition()
+  &:hover
+    color: $btn
+
+body
+  font-family: "Montserrat"
+
+nav
+  height: 6em
+  display: flex
+  align-items: center
+  position: absolute
+  width: 100vw
+
+  a
+    color: white
+    margin: 0 10px
+
+  .brand
+    text-transform: uppercase
+    flex-grow: 1
+    letter-spacing: 3.4px
+    margin-left: 6em
+    font-weight: 700
+
+.btn
+  border: 2px solid white
+  border-radius: 40px
+  padding: 10px 20px
+  +transition()
+  margin-right: 6em
+  &:hover
+    background: white
+    color: $btn
+
+h1,h2,h3,h4,h5,h6
+  font-weight: 300
+
+header
+  height: 80vh
+  background:
+    image: url(../img/jellyfish.jpg)
+    size: cover
+    position: center bottom
+  color: white
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+  h1
+    font:
+      size: 4em
+
+  h2
+    margin-top: 15px
+
+
+  .signup
+    margin-top: 20px
+    padding: 15px 50px
+    background: $btn
+    border: none
+    margin-right: 0
+
+
+
+section.featured
+  min-height: 100vh
+  color: #5E5C5C
+  display: flex
+  align-items: center
+  flex-direction: column
+  padding-top: 30px
+  h2
+    font:
+      size: 2em
+      weight: 300
+  .images
+    display: flex
+    flex-flow: row wrap
+    justify-content: space-around
+    align-items: center
+    min-height: 100vh
+
+    .img
+      width: 500px
+      height: 300px
+      border-radius: 5px
+      background:
+        image: url(../img/image1.jpg)
+        size: cover
+        position: center
+      color: white
+
+      figcaption
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: column
+        height: 100%
+      .icon-heart
+        color: $footer
+        &:before
+          color: $heart
+          margin-right: 5px
+
+
+
+
+section#signup
+  width: 100vw
+  min-height: 200px
+  background: $btn
+  color: white
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  padding: 20px 0
+  font:
+    size: 1.2em
+    weight: 300
+  form
+    padding-top: 60px
+  input[type="email"]
+    border-top-left-radius: 20px
+    border-bottom-left-radius: 20px
+    border: none
+    padding: 10px 30px 10px 10px
+    font-size: 1.3em
+    outline: none
+    margin-right: -5px
+    letter-spacing: 1.5px
+
+  input[type="submit"]
+    border-top-right-radius: 20px
+    border-bottom-right-radius: 20px
+    border: none
+    font-size: 1.3em
+    padding: 10px 50px 10px 50px
+    margin-left: -5px
+    background: $signup
+    color: white
+    font-weight: 300
+
+footer
+  display: flex
+  height: 5em
+  margin: 0 2em
+  align-items: center
+  color: $footer
+  font-weight: 300
+  p
+    margin: 0 20px 0 0
+  a
+    margin: 0 15px
