@@ -15,7 +15,7 @@ html(lang="en")
       h1.brand
         a(href="") Aperture
       a(href="") Discover
-      a(href="") Featured
+      a(href="#featured") Featured
       a(href="") Pricing
       a.btn(href="") Sign in
     header
@@ -23,7 +23,7 @@ html(lang="en")
       h2 Do something amazing with your photos
       a.signup.btn(href="#signup") Sign up
       
-    section.featured
+    section.featured#featured
       h2 Featured
       .images
         .img
@@ -57,8 +57,8 @@ html(lang="en")
       
     section#signup
       h2 Sign up today.
-      form
-        input(type="email" placeholder="email...")
+      form(action="//formspree.io/l.m@loganmcansh.com" method="POST")
+        input(type="email" placeholder="email..." name="_replyto")
         input(type="submit" value="Go")
         
     footer
