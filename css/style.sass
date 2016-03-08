@@ -14,6 +14,7 @@ a
   color: inherit
   text-decoration: none
   +transition()
+  outline-color: $btn
   &:hover
     color: $btn
 
@@ -107,15 +108,46 @@ section.featured
         size: cover
         position: center
       color: white
+      &:nth-child(2)
+        background-image: url(../img/image2.jpg)
+      &:nth-child(3)
+        background-image: url(../img/image3.jpg)
+      &:nth-child(4)
+        background-image: url(../img/image4.jpg)
 
       figcaption
         display: flex
         justify-content: center
-        align-items: center
+        margin-left: 15px
+        height: inherit
+        position: absolute
+        margin-top: -15px
         flex-direction: column
-        height: 100%
+        h3
+          max-width: 75%
+          font-size: 1.5em
+          height: calc(300px / 2)
+          display: flex
+          align-items: center
+
+        .profile
+          display: flex
+          align-items: flex-end
+          .selfie
+            +size(40px)
+            background:
+              size: cover
+              position: center
+            border-radius: 50%
+            margin-right: 10px
+          p
+            color: $footer
+            display: flex
+            font-weight: 300
+            align-items: flex-end
       .icon-heart
         color: $footer
+        margin: 15px
         &:before
           color: $heart
           margin-right: 5px
@@ -158,6 +190,11 @@ section#signup
     background: $signup
     color: white
     font-weight: 300
+    +transition()
+    cursor: pointer
+    &:hover
+      background: white
+      color: $signup
 
 footer
   display: flex

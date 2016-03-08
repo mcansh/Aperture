@@ -159,7 +159,8 @@ a {
   text-decoration: none;
   -webkit-transition: all 0.15s ease-out 0s;
   -moz-transition: all 0.15s ease-out 0s;
-  transition: all 0.15s ease-out 0s; }
+  transition: all 0.15s ease-out 0s;
+  outline-color: #6CC171; }
   a:hover {
     color: #6CC171; }
 
@@ -242,14 +243,44 @@ section.featured {
       background-size: cover;
       background-position: center;
       color: white; }
+      section.featured .images .img:nth-child(2) {
+        background-image: url(../img/image2.jpg); }
+      section.featured .images .img:nth-child(3) {
+        background-image: url(../img/image3.jpg); }
+      section.featured .images .img:nth-child(4) {
+        background-image: url(../img/image4.jpg); }
       section.featured .images .img figcaption {
         display: flex;
         justify-content: center;
-        align-items: center;
-        flex-direction: column;
-        height: 100%; }
+        margin-left: 15px;
+        height: inherit;
+        position: absolute;
+        margin-top: -15px;
+        flex-direction: column; }
+        section.featured .images .img figcaption h3 {
+          max-width: 75%;
+          font-size: 1.5em;
+          height: calc(300px / 2);
+          display: flex;
+          align-items: center; }
+        section.featured .images .img figcaption .profile {
+          display: flex;
+          align-items: flex-end; }
+          section.featured .images .img figcaption .profile .selfie {
+            height: 40px;
+            width: 40px;
+            background-size: cover;
+            background-position: center;
+            border-radius: 50%;
+            margin-right: 10px; }
+          section.featured .images .img figcaption .profile p {
+            color: #CDCFD2;
+            display: flex;
+            font-weight: 300;
+            align-items: flex-end; }
       section.featured .images .img .icon-heart {
-        color: #CDCFD2; }
+        color: #CDCFD2;
+        margin: 15px; }
         section.featured .images .img .icon-heart:before {
           color: #F05652;
           margin-right: 5px; }
@@ -286,7 +317,14 @@ section#signup {
     margin-left: -5px;
     background: #47824B;
     color: white;
-    font-weight: 300; }
+    font-weight: 300;
+    -webkit-transition: all 0.15s ease-out 0s;
+    -moz-transition: all 0.15s ease-out 0s;
+    transition: all 0.15s ease-out 0s;
+    cursor: pointer; }
+    section#signup input[type="submit"]:hover {
+      background: white;
+      color: #47824B; }
 
 footer {
   display: flex;
