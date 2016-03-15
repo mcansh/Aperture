@@ -14,10 +14,15 @@ html(lang="en")
     nav
       h1.brand
         a(href="") Aperture
-      a(href="") Discover
-      a(href="#featured") Featured
-      a(href="") Pricing
-      a.btn(href="") Sign in
+      include ./links
+      
+      
+      .container
+        button.hamburger.hamburger--stand(type="button")
+          span.hamburger-box
+            span.hamburger-inner
+        include ./links
+        
     header
       h1 Create beautiful stories
       h2 Do something amazing with your photos
@@ -68,4 +73,9 @@ html(lang="en")
       a(href="") Contact
       a(href="") Privacy
       a(href="https://github.com/mcansh/aperture") View on Github
+    
+    // Scripts 
+    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
+    script(src='js/navigation.js')
+    
       

@@ -1,6 +1,7 @@
 @import url(//fonts.googleapis.com/css?family=Montserrat:300,700)
 @import "bourbon"
 @import "icon"
+@import "hamburgers"
 
 $btn:     #6CC171
 $signup:  #47824B
@@ -21,12 +22,48 @@ a
 body
   font-family: "Montserrat"
 
+
+.blur
+  background-color: rgba(0,0,0,0.5)
+  -webkit-backdrop-filter: blur(10px)
 nav
   height: 6em
   display: flex
   align-items: center
   position: absolute
   width: 100vw
+  @media (max-width: 800px)
+    justify-content: center
+  @media (max-width: 550px)
+
+  .github
+    display: none
+    @media (max-width: 550px)
+      display: block
+
+
+  .links
+    @media (max-width: 550px)
+      display: none
+  .container
+    display: none
+    @media (max-width: 550px)
+      margin-right: 1em
+      z-index: 1
+      display: block
+    .links.is-open
+      display: flex
+      align-items: center
+      flex-direction: column
+      height: calc(100vh - 6em)
+      position: absolute
+      width: 100vw
+      top: 6em
+      left: 0
+      right: 0
+      bottom: 0
+      a
+        margin: 15px 0
 
   a
     color: white
@@ -38,6 +75,12 @@ nav
     letter-spacing: 3.4px
     margin-left: 6em
     font-weight: 700
+    @media (max-width: 750px)
+      flex-grow: 0
+      margin: 0
+    @media (max-width: 550px)
+      flex-grow: 1
+      margin-left: 1em
 
 .btn
   border: 2px solid white
@@ -45,6 +88,8 @@ nav
   padding: 10px 20px
   +transition()
   margin-right: 6em
+  @media (max-width: 750px)
+    margin: 0
   &:hover
     background: white
     color: $btn
@@ -205,6 +250,8 @@ section#signup
   input[type="submit"]
     border-top-right-radius: 20px
     border-bottom-right-radius: 20px
+    border-top-left-radius: 0px
+    border-bottom-left-radius: 0px
     border: none
     font-size: 1.3em
     padding: 10px 50px 10px 50px
@@ -214,6 +261,7 @@ section#signup
     font-weight: 300
     +transition()
     cursor: pointer
+    -webkit-appearance: none
     &:hover
       background: white
       color: $signup
@@ -242,5 +290,3 @@ footer
       margin-right: 0px
     @media (max-width: 700px)
       margin: 15px 0
-      &:last-child
-        margin-bottom: 20px

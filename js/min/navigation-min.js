@@ -1,0 +1,1 @@
+var $hamburger=$(".hamburger"),$links=$(".links"),$nav=$("nav");$hamburger.on("click",function(l){$hamburger.toggleClass("is-active"),$links.toggleClass("is-open"),$links.toggleClass("blur"),$nav.toggleClass("blur")});
