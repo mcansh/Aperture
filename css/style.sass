@@ -54,6 +54,7 @@ h1,h2,h3,h4,h5,h6
 
 header
   height: 80vh
+  width: 100vw
   background:
     image: url(../img/jellyfish.jpg)
     size: cover
@@ -63,10 +64,14 @@ header
   justify-content: center
   align-items: center
   flex-direction: column
+  text-align: center
 
   h1
-    font:
-      size: 4em
+    font-size: 4em
+    @media (max-width: 730px)
+      font-size: 3em
+    @media (max-width: 550px)
+      font-size: 2.5em
 
   h2
     margin-top: 15px
@@ -95,14 +100,16 @@ section.featured
   .images
     display: flex
     flex-flow: row wrap
-    justify-content: space-around
+    justify-content: center
     align-items: center
     min-height: 100vh
+    width: 100vw
 
     .img
       width: 500px
       height: 300px
       border-radius: 5px
+      margin: 40px
       background:
         image: url(../img/image1.jpg)
         size: cover
@@ -136,6 +143,7 @@ section.featured
           .selfie
             +size(40px)
             background:
+              image: url()
               size: cover
               position: center
             border-radius: 50%
@@ -148,6 +156,8 @@ section.featured
       .icon-heart
         color: $footer
         margin: 15px
+        position: absolute
+        margin: 30px 20px
         &:before
           color: $heart
           margin-right: 5px
@@ -170,6 +180,11 @@ section#signup
     weight: 300
   form
     padding-top: 60px
+    @media (max-width: 350px)
+      display: flex
+      flex-direction: column
+      justify-content: center
+
   input[type="email"]
     border-top-left-radius: 20px
     border-bottom-left-radius: 20px
@@ -179,6 +194,13 @@ section#signup
     outline: none
     margin-right: -5px
     letter-spacing: 1.5px
+    @media (max-width: 550px)
+      width: 50vw
+    @media (max-width: 350px)
+      width: 75vw
+      border-bottom-left-radius: 0px
+      border-top-right-radius: 20px
+      margin-right: 0px
 
   input[type="submit"]
     border-top-right-radius: 20px
@@ -195,6 +217,11 @@ section#signup
     &:hover
       background: white
       color: $signup
+    @media (max-width: 350px)
+      border-top-right-radius: 0px
+      border-bottom-right-radius: 20px
+      border-bottom-left-radius: 20px
+      margin-left: 0px
 
 footer
   display: flex
@@ -203,7 +230,17 @@ footer
   align-items: center
   color: $footer
   font-weight: 300
+  @media (max-width: 700px)
+    flex-direction: column
   p
     margin: 0 20px 0 0
+    @media (max-width: 700px)
+      margin: 15px
   a
     margin: 0 15px
+    &:last-child
+      margin-right: 0px
+    @media (max-width: 700px)
+      margin: 15px 0
+      &:last-child
+        margin-bottom: 20px
