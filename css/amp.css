@@ -539,3 +539,60 @@ footer {
         margin: 10px 0; }
         footer a:last-child {
           margin-bottom: 20px; } }
+
+section.featured .images {
+  z-index: 1; }
+  section.featured .images amp-img {
+    width: 500px;
+    height: 300px;
+    border-radius: 5px;
+    margin: 40px;
+    background-image: url(../img/image1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: white; }
+    section.featured .images amp-img:nth-child(2) {
+      background-image: url(../img/image2.jpg); }
+    section.featured .images amp-img:nth-child(3) {
+      background-image: url(../img/image3.jpg); }
+    section.featured .images amp-img:nth-child(4) {
+      background-image: url(../img/image4.jpg); }
+    section.featured .images amp-img img {
+      z-index: -1; }
+  section.featured .images figcaption {
+    display: flex;
+    justify-content: center;
+    margin-left: 15px;
+    height: inherit;
+    position: absolute;
+    margin-top: -15px;
+    flex-direction: column;
+    height: inherit;
+    width: inherit; }
+    section.featured .images figcaption h3 {
+      max-width: 75%;
+      font-size: 1.5em;
+      height: calc(300px / 2);
+      display: flex;
+      align-items: center; }
+    section.featured .images figcaption .profile {
+      display: flex; }
+      section.featured .images figcaption .profile p {
+        color: #CDCFD2;
+        display: flex;
+        font-weight: 300;
+        align-items: flex-end; }
+      section.featured .images figcaption .profile amp-img {
+        height: 40px;
+        width: 40px;
+        margin: 0;
+        border-radius: 50%;
+        margin-right: 10px; }
+
+.icon-heart {
+  color: #CDCFD2;
+  position: absolute;
+  margin: 30px 20px; }
+  .icon-heart:before {
+    color: #F05652;
+    margin-right: 5px; }
