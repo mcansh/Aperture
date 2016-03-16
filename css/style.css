@@ -269,6 +269,9 @@ a {
 body {
   font-family: "Montserrat"; }
 
+.no-scroll {
+  overflow: hidden; }
+
 .blur {
   background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px); }
@@ -295,7 +298,6 @@ nav {
     @media (max-width: 550px) {
       nav .container {
         margin-right: 1em;
-        z-index: 10;
         display: block; } }
     nav .container .links.is-open {
       display: flex;
