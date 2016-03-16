@@ -1,4 +1,4 @@
-@import url(//fonts.googleapis.com/css?family=Montserrat:300,700);
+@import url(//brick.a.ssl.fastly.net/Montserrat:200,300,700);
 @font-face {
   font-family: "iconfont";
   src: url(//unsplash.global.ssl.fastly.net/assets/iconfont-6c936409cb0cfbdab410e1c2ab68b33b145a3b3cb603902982d2a6e36ab4e36b.eot);
@@ -295,7 +295,7 @@ nav {
     @media (max-width: 550px) {
       nav .container {
         margin-right: 1em;
-        z-index: 1;
+        z-index: 10;
         display: block; } }
     nav .container .links.is-open {
       display: flex;
@@ -432,6 +432,9 @@ section.featured {
             background-position: center;
             border-radius: 50%;
             margin-right: 10px; }
+          section.featured .images .img figcaption .profile amp-img {
+            border-radius: 50%;
+            margin-right: 10px; }
           section.featured .images .img figcaption .profile p {
             color: #CDCFD2;
             display: flex;
@@ -439,7 +442,6 @@ section.featured {
             align-items: flex-end; }
       section.featured .images .img .icon-heart {
         color: #CDCFD2;
-        margin: 15px;
         position: absolute;
         margin: 30px 20px; }
         section.featured .images .img .icon-heart:before {
