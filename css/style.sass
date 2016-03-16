@@ -113,6 +113,8 @@ header
   align-items: center
   flex-direction: column
   text-align: center
+  @media (max-width: 320px)
+    height: 100vh
 
   h1
     font-size: 4em
@@ -287,6 +289,7 @@ footer
   font-weight: 300
   @media (max-width: 700px)
     flex-direction: column
+    height: auto
   p
     margin: 0 20px 0 0
     @media (max-width: 700px)
@@ -296,4 +299,6 @@ footer
     &:last-child
       margin-right: 0px
     @media (max-width: 700px)
-      margin: 15px 0
+      margin: 10px 0
+      &:last-child
+        margin-bottom: 20px
