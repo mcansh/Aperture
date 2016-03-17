@@ -1,4 +1,3 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700)
 @import "bourbon"
 @import "icon"
 @import "hamburgers"
@@ -7,9 +6,6 @@ $btn:     #6CC171
 $signup:  #47824B
 $footer:  #CDCFD2
 $heart:   #F05652
-
-*
-  margin: 0
 
 a
   color: inherit
@@ -155,7 +151,7 @@ section.featured
     min-height: 100vh
     width: 100vw
 
-    .img
+    amp-img
       width: 500px
       height: 300px
       border-radius: 5px
@@ -171,6 +167,8 @@ section.featured
         background-image: url(../img/image3.jpg)
       &:nth-child(4)
         background-image: url(../img/image4.jpg)
+      img
+        z-index: -1
 
       figcaption
         display: flex
@@ -192,20 +190,24 @@ section.featured
           display: flex
           align-items: flex-end
 
-          .selfie
+          img
+            z-index: 1
+
+          amp-img
             +size(40px)
             background:
               image: url()
               size: cover
               position: center
             border-radius: 50%
-            margin-right: 10px
+            margin: 10px
 
           p
             color: $footer
             display: flex
             font-weight: 300
             align-items: flex-end
+
 
       .icon-heart
         color: $footer
@@ -215,7 +217,8 @@ section.featured
           color: $heart
           margin-right: 5px
 
-
+#AMP_1
+  z-index: -1
 
 
 section#signup

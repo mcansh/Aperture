@@ -1,7 +1,7 @@
 ###  Amp Stuff
-/amp
-/css/amp.css
-/css/amp.sass
+#/amp
+#/css/amp.css
+#/css/amp.sass
 
 
 # Created by https://www.gitignore.io/api/sass,codekit,osx
