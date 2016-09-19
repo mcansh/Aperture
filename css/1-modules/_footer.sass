@@ -1,0 +1,22 @@
+footer
+  display: flex
+  height: 5em
+  margin: 0 2em
+  align-items: center
+  color: $footer
+  font-weight: 300
+  @media (max-width: 700px)
+    flex-direction: column
+    height: auto
+  p
+    margin: 0 20px 0 0
+    @media (max-width: 700px)
+      margin: 15px
+  a
+    margin: 0 15px
+    &:last-child
+      margin-right: 0px
+    @media (max-width: 700px)
+      margin: 10px 0
+      &:last-child
+        margin-bottom: 20px

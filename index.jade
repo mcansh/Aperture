@@ -27,14 +27,11 @@ html(lang="en")
     nav
       h1.brand
         a(href="") Aperture
-      include ./links
-      
-      
-      .container
+      include _includes/links
+      .hammy-container
         button.hamburger.hamburger--stand(type="button")
           span.hamburger-box
             span.hamburger-inner
-        include ./links
         
     header
       h1 Create beautiful stories
@@ -44,34 +41,34 @@ html(lang="en")
     section.featured#featured
       h2 Featured
       .images
-        .img
-          span.icon.icon-heart 301
-          figcaption
-            h3 Take on an adventure of a lifetime
+        a.img(href="https://unsplash.com/photos/IEHPDNk2-8w" target="_blank")
+          span.icon.icon-heart 372
+          .figcaption
+            h3
             .profile
               .selfie(style="background-image: url(img/users/user1.jpg)")
-              p Thomas Lang
-        .img
-          span.icon.icon-heart 301
-          figcaption
-            h3 A day in Barcelona with friends
-            .profile
-              .selfie(style="background-image: url(img/users/user3.jpg)")
-              p Kate Ludson   
-        .img
-          span.icon.icon-heart 301
-          figcaption
-            h3 Life's questions answered by one trip
+              p Sam Ferrara
+        a.img(href="https://unsplash.com/photos/NGcg6pNXrJE" target="_blank")
+          span.icon.icon-heart 132
+          .figcaption
+            h3 Oslo, Norway
             .profile
               .selfie(style="background-image: url(img/users/user2.jpg)")
-              p John Dikson
-        .img
-          span.icon.icon-heart 301
-          figcaption
-            h3 Iceland: the most magical place on Earth
+              p Oliver Cole
+        a.img(href="https://unsplash.com/photos/USrZRcRS2Lw" target="_blank")
+          span.icon.icon-heart 302
+          .figcaption
+            h3 New York, United States
+            .profile
+              .selfie(style="background-image: url(img/users/user3.jpg)")
+              p Todd Quackenbush
+        a.img(href="https://unsplash.com/photos/_SFJhRPzJHs" target="_blank")
+          span.icon.icon-heart 620
+          .figcaption
+            h3 New York City, United States
             .profile
               .selfie(style="background-image: url(img/users/user4.jpg)")
-              p Sam Bosely
+              p NASA
       
     section#signup
       h2 Sign up today.
@@ -91,7 +88,6 @@ html(lang="en")
       a(href="https://github.com/mcansh/aperture") View on Github
     
     // Scripts 
-    script(src='//ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js')
-    script(src='js/navigation.js')
+    script(src='js/main.min.js')
     
       

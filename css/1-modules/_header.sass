@@ -1,0 +1,33 @@
+header
+  height: 80vh
+  width: 100vw
+  background:
+    image: linear-gradient(0deg, rgba(0, 0, 0, 0.33), rgba(0, 0, 0, 0.33)), url(../img/jellyfish.jpg)
+    size: cover
+    position: center bottom
+  color: white
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  text-align: center
+  @media (max-width: 320px)
+    height: 100vh
+
+  h1
+    font-size: 4em
+    @media (max-width: 730px)
+      font-size: 3em
+    @media (max-width: 550px)
+      font-size: 2.5em
+
+  h2
+    margin-top: 15px
+
+
+  .signup
+    margin-top: 20px
+    padding: 15px 50px
+    background: $btn
+    border: none
+    margin-right: 0

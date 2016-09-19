@@ -1,0 +1,60 @@
+section#signup
+  width: 100vw
+  min-height: 200px
+  background: $btn
+  color: white
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+  padding: 20px 0
+  font:
+    size: 1.2em
+    weight: 300
+  form
+    padding-top: 60px
+    @media (max-width: 350px)
+      display: flex
+      flex-direction: column
+      justify-content: center
+
+  input[type="email"]
+    border-top-left-radius: 25px
+    border-bottom-left-radius: 25px
+    border: none
+    padding: 10px 30px 10px 20px
+    font-size: 1.3em
+    outline: none
+    margin-right: -5px
+    letter-spacing: 1.5px
+    @media (max-width: 550px)
+      width: 50vw
+    @media (max-width: 350px)
+      width: 75vw
+      border-bottom-left-radius: 0px
+      border-top-right-radius: 25px
+      margin-right: 0px
+
+  input[type="submit"]
+    border-top-right-radius: 25px
+    border-bottom-right-radius: 25px
+    border-top-left-radius: 0px
+    border-bottom-left-radius: 0px
+    border: none
+    font-size: 1.3em
+    padding: 10px 50px 10px 40px
+    margin-left: -5px
+    background: $signup
+    color: white
+    font-weight: 300
+    +transition()
+    cursor: pointer
+    -webkit-appearance: none
+    &:hover
+      background: white
+      color: $signup
+    @media (max-width: 350px)
+      border-top-right-radius: 0px
+      border-bottom-right-radius: 25px
+      border-bottom-left-radius: 25px
+      margin-left: 0px
